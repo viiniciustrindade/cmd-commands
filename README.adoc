@@ -1,0 +1,65 @@
+= 🖥️ Comandos Essenciais do CMD Windows 💻
+
+
+[#introducao]
+== 🌟 Introdução
+Este guia apresenta os principais comandos do CMD para administração básica do sistema. Perfect para iniciantes! ✨
+
+*Dica profissional*: Pressione `Tab` para autocompletar e `F7` para ver histórico! 🎯
+
+[#navegacao]
+== 📂 Navegação
+[cols="1,3,2", options="header"]
+|===
+| Comando | Descrição | Exemplo
+| `cd` 🚀 | Muda diretório | `cd Documentos` + `cd ..` (volta) + `cd \` (raiz)
+| `dir` 👀 | Lista conteúdo | `dir` + `dir /w` (largo) + `dir /a` (ocultos)
+| `mkdir/md` 🏗️ | Cria diretório | `mkdir Projetos`
+| `rmdir/rd` 🗑️ | Remove diretório | `rmdir PastaVazia` + `rmdir /s PastaComItens`
+|===
+
+[#arquivos]
+== 📄 Arquivos
+[cols="1,3,2", options="header"]
+|===
+| Comando | Descrição | Exemplo
+| `type` 👓 | Exibe conteúdo | `type relatorio.txt`
+| `copy` 📋 | Copia arquivos | `copy original.txt backup/` + `copy *.txt Backup\`
+| `move` 🚛 | Move/renomeia | `move antigo.txt novo.txt`
+| `del` 💥 | Exclui arquivos | `del temp.txt` + `del *.tmp`
+| `ren` ✏️ | Renomeia | `ren antigo.txt novo.txt`
+|===
+
+[#sistema]
+== ⚙️ Sistema
+[cols="1,3,2", options="header"]
+|===
+| Comando | Descrição | Exemplo
+| `cls` 🧹 | Limpa tela | `cls`
+| `echo` 🗣️ | Exibe/cria | `echo Olá` + `echo texto > arquivo.txt`
+| `date/time` 📅 | Data/hora | `date /t` + `time /t`
+| `hostname` 🏷️ | Nome PC | `hostname`
+| `ping` 📶 | Testa rede | `ping google.com`
+| `ipconfig` 🌐 | Config rede | `ipconfig /all`
+| `tasklist` 📋 | Lista processos | `tasklist`
+| `taskkill` 🔫 | Encerra | `taskkill /im notepad.exe`
+|===
+
+[#redirecionamento]
+== 🔄 Redirecionamento
+[cols="1,3,2", options="header"]
+|===
+| Comando | Descrição | Exemplo
+| `>` ➡️ | Saída p/arquivo | `dir > lista.txt`
+| `>>` 📥 | Acrescenta | `echo novo >> lista.txt`
+| `help` ❓ | Ajuda geral | `help`
+| `/?` 💡 | Ajuda cmd | `copy /?`
+|===
+
+[#dicas]
+== 💎 Dicas
+* 🚀 `Tab` - Autocompletar
+* 🔍 `F7` - Histórico
+* 🛑 `Ctrl+C` - Cancela
+* 🧹 `Ctrl+L` - Limpa tela
+
