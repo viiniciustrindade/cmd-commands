@@ -3,7 +3,7 @@
 
 [#introducao]
 == 🌟 Introdução
-Este guia apresenta os principais comandos do CMD para administração básica do sistema. Perfect para iniciantes! ✨
+Este guia apresenta os principais comandos do CMD para administração básica do sistema.
 
 *Dica profissional*: Pressione `Tab` para autocompletar e `F7` para ver histórico! 🎯
 
