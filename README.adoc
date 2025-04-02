@@ -29,6 +29,41 @@ Este guia apresenta os principais comandos do CMD para administração básica d
 | `ren` ✏️ | Renomeia | `ren antigo.txt novo.txt`
 |===
 
+[#exemplos-mov-copy]
+== 📌 Exemplos de `move` e `copy`
+
+=== 🔄 Exemplo de `move`
+
+* **Mover um arquivo da pasta Downloads para a Área de Trabalho:**
+  ```cmd
+  move "%USERPROFILE%\Downloads\arquivo.txt" "%USERPROFILE%\Desktop\"
+  ```
+
+* **Mover todos os arquivos `.txt` da pasta Downloads para Documentos:**
+  ```cmd
+  move "%USERPROFILE%\Downloads\*.txt" "%USERPROFILE%\Documents\"
+  ```
+
+=== 📋 Exemplo de `copy`
+
+* **Copiar um arquivo da pasta Downloads para a Área de Trabalho:**
+  ```cmd
+  copy "%USERPROFILE%\Downloads\arquivo.txt" "%USERPROFILE%\Desktop\"
+  ```
+
+* **Copiar todos os arquivos `.txt` da pasta Downloads para Documentos:**
+  ```cmd
+  copy "%USERPROFILE%\Downloads\*.txt" "%USERPROFILE%\Documents\"
+  ```
+
+* **Copiar uma pasta inteira (com subdiretórios e arquivos) para a Área de Trabalho:**
+  ```cmd
+  xcopy "%USERPROFILE%\Downloads\MinhaPasta" "%USERPROFILE%\Desktop\MinhaPasta" /E /I
+  ```
+  **Explicação:**
+  - `/E` → Copia todos os arquivos e subdiretórios, mesmo se estiverem vazios.
+  - `/I` → Assume que o destino é uma pasta, se ainda não existir.
+
 [#sistema]
 == ⚙️ Sistema
 [cols="1,3,2", options="header"]
