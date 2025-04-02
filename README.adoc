@@ -1,6 +1,5 @@
 = 🖥️ Comandos Essenciais do CMD Windows 💻
 
-
 [#introducao]
 == 🌟 Introdução
 Este guia apresenta os principais comandos do CMD para administração básica do sistema.
@@ -63,3 +62,64 @@ Este guia apresenta os principais comandos do CMD para administração básica d
 * 🛑 `Ctrl+C` - Cancela
 * 🧹 `Ctrl+L` - Limpa tela
 
+[#exercicios]
+== 🏆 Exercícios Práticos
+
+=== 📌 Nível 1 - Conceitos Básicos (Exploração do Sistema)
+
+* Descubra o diretório atual.
+* Navegue para a pasta "Downloads".
+* Liste todos os arquivos da pasta "Downloads".
+* Crie uma nova pasta chamada "ExerciciosCMD" dentro de "Documentos".
+* Navegue até a pasta recém-criada "ExerciciosCMD".
+
+=== 🚀 Nível 2 - Manipulação de Arquivos e Pastas
+
+* Crie um arquivo de texto chamado "notas.txt" e escreva "Meu primeiro arquivo no CMD".
+* Copie o arquivo "notas.txt" para a pasta "Downloads".
+* Renomeie o arquivo "notas.txt" para "minhas_anotacoes.txt".
+* Mova o arquivo "minhas_anotacoes.txt" para a área de trabalho.
+* Exiba o conteúdo do arquivo "minhas_anotacoes.txt" sem abrir no bloco de notas.
+* Apague o arquivo "minhas_anotacoes.txt".
+* Crie uma pasta chamada "BackupCMD" dentro de "Documentos".
+* Copie todos os arquivos de "Downloads" para "BackupCMD".
+* Liste apenas os arquivos ocultos da pasta "Downloads".
+
+=== ⚙️ Nível 3 - Diagnóstico do Sistema
+
+* Descubra o nome do seu computador.
+* Verifique as configurações de rede e exiba seu endereço IP.
+* Teste a conexão com o site da Microsoft.
+* Liste todos os processos em execução no seu computador.
+* Identifique se o Bloco de Notas está aberto e, se estiver, encerre o processo.
+
+=== 💻 Nível 4 - Automação e Redirecionamento de Saída
+
+* Crie um arquivo chamado "RelatorioRede.txt" e armazene nele a saída do comando "ipconfig /all".
+* Acrescente ao arquivo "RelatorioRede.txt" a lista de processos em execução.
+* Exiba o conteúdo de "RelatorioRede.txt" no CMD.
+* Exporte para um arquivo a lista de arquivos e pastas do diretório "Downloads".
+* Crie um comando que limpe a tela e exiba a mensagem "Sistema Pronto para Uso".
+
+=== 🎖️ Desafio Final - Projeto Prático
+
+* Crie a seguinte estrutura de pastas no diretório "Documentos":
+
+```
+C:\Users\SeuUsuario\Documentos\ProjetoCMD
+ ├── Relatorios
+ ├── Configuracoes
+ ├── Logs
+```
+
+* Dentro da pasta "Relatorios", crie três arquivos de texto com conteúdos diferentes.
+* Copie os três arquivos da pasta "Relatorios" para "Logs".
+* Renomeie um dos arquivos da pasta "Logs" para "Backup.log".
+* Redirecione a saída do comando "dir" da pasta "ProjetoCMD" para um arquivo chamado "Resumo.txt".
+* Exiba o conteúdo do arquivo "Resumo.txt" no CMD.
+* Exclua todos os arquivos da pasta "Logs".
+* Apague a pasta "Logs" permanentemente.
+
+=== 🏆 Desafio Extra
+
+Crie um script `.bat` que execute todas essas tarefas automaticamente!
