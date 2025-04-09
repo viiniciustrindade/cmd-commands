@@ -166,3 +166,86 @@ C:\Users\SeuUsuario\Documentos\ProjetoCMD
 === 🏆 Desafio Extra
 
 Crie um script `.bat` que execute todas essas tarefas automaticamente!
+
+= 📝 Roteiro da Atividade: Organizador e Backup com .BAT
+
+Nível: Intermediário
+
+== 🎯 Objetivo
+
+Criar um script `.bat` que seja capaz de organizar arquivos automaticamente com base em sua extensão e oferecer funcionalidades de backup e exclusão.
+
+== 📂 Estrutura esperada
+
+O script deverá criar a seguinte estrutura no diretório `Documents` do usuário:
+
+----
+Organizador\
+├── Entrada\
+├── Imagens\
+├── Documentos\
+├── Planilhas\
+├── Backup\
+----
+
+== 🛠️ O que o script deve fazer
+
+. Criar as pastas acima em `%USERPROFILE%\Documents\Organizador`.
+. Criar 3 arquivos simulados na pasta `Entrada`:
+  * `imagem1.jpg`
+  * `documento1.txt`
+  * `planilha1.xlsx`
+. Mover arquivos da pasta `Entrada` para as pastas:
+  * `.jpg` → `Imagens`
+  * `.txt` → `Documentos`
+  * `.xlsx` → `Planilhas`
+. Perguntar ao usuário se deseja copiar os arquivos organizados para a pasta `Backup`.
+. Se o usuário responder *sim*, copiar os arquivos com `xcopy`.
+. Perguntar ao usuário se deseja excluir os arquivos da pasta `Entrada`.
+
+== 📌 Comandos importantes explicados
+
+=== 📘 `if` e `else`
+
+Usamos `if` para fazer decisões no script:
+
+[source,bat]
+----
+if /I "%RESPOSTA%"=="S" (
+    echo Você escolheu SIM.
+) else (
+    echo Você escolheu NÃO.
+)
+----
+
+* `/I`: Ignora maiúsculas e minúsculas. "s" e "S" são tratados da mesma forma.
+* `==`: Compara valores.
+* O bloco entre parênteses será executado se a condição for verdadeira.
+* `else` executa outro bloco caso a condição não seja verdadeira.
+
+=== 📘 `/I` no `xcopy`
+
+No comando `xcopy`, usamos `/I` para garantir que o destino seja interpretado como pasta:
+
+[source,bat]
+----
+xcopy "C:\Origem\*" "C:\Destino" /I /Y
+----
+
+* `/I`: Assume que o destino é uma pasta, mesmo que ela não exista ainda.
+* `/Y`: Não pergunta se deseja sobrescrever arquivos existentes.
+* `>nul`: Oculta a saída do comando para não poluir o terminal.
+
+=== 📘 `for` básico (não usado neste exercício, mas mostrado como exemplo)
+
+Você pode usar `for` para repetir ações com arquivos:
+
+[source,bat]
+----
+for %%f in (*.txt) do (
+    echo Encontrado: %%f
+)
+----
+
+* `%%f`: Representa cada arquivo `.txt` no diretório.
+* Dentro do bloco `do (...)`, você pode executar qualquer ação com cada arquivo.
